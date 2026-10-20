@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="赣鄱稻田插画">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F2E4"/>
+      <stop offset="0.55" stop-color="#EFF0DF"/>
+      <stop offset="1" stop-color="#E4E9D5"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B9C6A5"/>
+      <stop offset="1" stop-color="#8FA07B"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#sky)"/>
+  <circle cx="452" cy="168" r="72" fill="#EAD9A6" opacity="0.85"/>
+  <circle cx="452" cy="168" r="104" fill="#EAD9A6" opacity="0.28"/>
+  <!-- 远山 -->
+  <path d="M0 330 Q 110 250 220 312 T 430 300 T 600 336 L600 420 L0 420Z" fill="#C6D1B6" opacity="0.8"/>
+  <path d="M0 360 Q 140 306 268 352 T 470 344 T 600 370 L600 440 L0 440Z" fill="#AEBEA0"/>
+  <!-- 田埂 -->
+  <path d="M0 430 Q 180 402 340 438 T 600 424 L600 800 L0 800Z" fill="url(#field)"/>
+  <path d="M-20 520 Q 200 486 400 528 T 620 512" stroke="#7E9069" stroke-width="3" fill="none" opacity="0.55"/>
+  <path d="M-20 620 Q 210 578 410 628 T 620 604" stroke="#7E9069" stroke-width="3" fill="none" opacity="0.45"/>
+  <path d="M-20 730 Q 220 686 420 738 T 620 712" stroke="#7E9069" stroke-width="3" fill="none" opacity="0.35"/>
+  <!-- 稻穗行 -->
+  <g stroke="#6E8059" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9">
+    <path d="M84 700 L84 596"/><path d="M84 640 q 16 -8 24 -22"/><path d="M84 668 q -16 -8 -22 -22"/>
+    <path d="M156 720 L156 600"/><path d="M156 646 q 16 -8 24 -22"/><path d="M156 676 q -16 -8 -22 -24"/>
+    <path d="M232 700 L232 588"/><path d="M232 636 q 16 -8 24 -22"/><path d="M232 664 q -16 -8 -22 -22"/>
+    <path d="M318 726 L318 606"/><path d="M318 652 q 16 -8 24 -22"/><path d="M318 682 q -16 -8 -22 -24"/>
+    <path d="M396 706 L396 592"/><path d="M396 640 q 16 -8 24 -22"/><path d="M396 668 q -16 -8 -22 -22"/>
+    <path d="M470 730 L470 610"/><path d="M470 656 q 16 -8 24 -22"/><path d="M470 686 q -16 -8 -22 -24"/>
+    <path d="M540 706 L540 600"/><path d="M540 646 q 16 -8 24 -22"/><path d="M540 676 q -16 -8 -22 -22"/>
+  </g>
+  <g fill="#D9B45E">
+    <ellipse cx="108" cy="612" rx="5" ry="12" transform="rotate(22 108 612)"/>
+    <ellipse cx="256" cy="604" rx="5" ry="12" transform="rotate(22 256 604)"/>
+    <ellipse cx="342" cy="622" rx="5" ry="12" transform="rotate(22 342 622)"/>
+    <ellipse cx="494" cy="626" rx="5" ry="12" transform="rotate(22 494 626)"/>
+  </g>
+  <!-- 白墙灰瓦小屋 -->
+  <g transform="translate(392 372)">
+    <path d="M0 44 L42 10 L84 44Z" fill="#6F6A5E"/>
+    <rect x="8" y="44" width="68" height="46" fill="#F5F1E4"/>
+    <rect x="32" y="62" width="18" height="28" fill="#B7AE96"/>
+  </g>
+  <g stroke="#5B6B49" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M118 200 q 10 -8 20 0"/><path d="M146 186 q 9 -7 18 0"/>
+  </g>
+</svg>

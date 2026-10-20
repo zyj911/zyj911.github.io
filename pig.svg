@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="山下长黑猪插画">
+  <rect width="600" height="800" fill="#F6F1E6"/>
+  <rect y="470" width="600" height="330" fill="#E9E2D0"/>
+  <path d="M0 470 L600 470" stroke="#D6CCB4" stroke-width="4"/>
+  <g stroke="#C9BFA6" stroke-width="3" opacity="0.7">
+    <path d="M60 0 L60 470"/><path d="M180 0 L180 470"/><path d="M420 0 L420 470"/><path d="M540 0 L540 470"/>
+  </g>
+  <circle cx="512" cy="120" r="54" fill="#EFDDA7" opacity="0.7"/>
+  <!-- 猪 -->
+  <g transform="translate(112 330)">
+    <ellipse cx="190" cy="200" rx="176" ry="106" fill="#4B4740"/>
+    <path d="M356 168 q 42 -6 46 34 q 2 40 -44 36" fill="#443F39"/>
+    <ellipse cx="196" cy="146" rx="120" ry="76" fill="#565149"/>
+    <path d="M78 210 q -26 66 -8 96" stroke="#3E3A34" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M300 216 q 22 60 4 88" stroke="#3E3A34" stroke-width="16" stroke-linecap="round" fill="none"/>
+    <path d="M140 286 l-4 74" stroke="#3E3A34" stroke-width="20" stroke-linecap="round"/>
+    <path d="M258 288 l4 72" stroke="#3E3A34" stroke-width="20" stroke-linecap="round"/>
+    <!-- 头 -->
+    <ellipse cx="366" cy="150" rx="86" ry="74" fill="#524D45"/>
+    <path d="M406 92 q 26 -30 46 -10 q 14 18 -8 40" fill="#443F39"/>
+    <path d="M330 96 q -10 -36 14 -44 q 22 -6 26 22" fill="#443F39"/>
+    <ellipse cx="424" cy="168" rx="30" ry="24" fill="#6B6259"/>
+    <circle cx="416" cy="144" r="6" fill="#2A2723"/>
+    <circle cx="352" cy="140" r="6" fill="#2A2723"/>
+    <ellipse cx="412" cy="164" rx="4" ry="6" fill="#332F2A"/>
+    <ellipse cx="428" cy="164" rx="4" ry="6" fill="#332F2A"/>
+  </g>
+  <!-- 稻草与食槽 -->
+  <g stroke="#C4A667" stroke-width="3" opacity="0.8">
+    <path d="M70 720 l38 -26"/><path d="M94 728 l30 -34"/><path d="M126 730 l24 -30"/>
+    <path d="M470 716 l34 -24"/><path d="M492 728 l26 -32"/>
+  </g>
+  <rect x="232" y="716" width="150" height="34" rx="10" fill="#B79C7B"/>
+  <rect x="246" y="722" width="122" height="14" rx="7" fill="#CDB491"/>
+</svg>

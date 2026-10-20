@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>助农心愿留言 · 赣鄱农韵</title>
+<meta name="description" content="面向乡村振兴的寄语留言墙，支持注册登录、审核展示与举报处理。">
+<meta name="theme-color" content="#FAF7F0">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+<body data-page="message" data-root="../">
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html" aria-label="赣鄱农韵 首页">
+      <span class="brand__seal" aria-hidden="true">赣</span>
+      <span class="brand__text">
+        <span class="brand__name">赣鄱农韵</span>
+        <span class="brand__sub">江西农业大学 · 农业宣传平台</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" data-nav="home" href="../index.html">首页</a>
+      <a class="nav__link" data-nav="research" href="research.html">江农科研成果</a>
+      <a class="nav__link" data-nav="map" href="map.html">赣鄱农业地图</a>
+      <a class="nav__link" data-nav="science" href="science.html">农业科普</a>
+      <a class="nav__link" data-nav="message" href="message.html">助农心愿</a>
+      <a class="nav__link" data-nav="admin" href="admin.html">后台管理</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn icon-btn--desktop" data-search-open type="button" aria-label="全站搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      </button>
+      <button class="burger" type="button" aria-label="展开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a data-nav="home" href="../index.html">首页 <span class="text-xs text-muted">门户</span></a>
+  <a data-nav="research" href="research.html">江农科研成果 <span class="text-xs text-muted">时间轴</span></a>
+  <a data-nav="map" href="map.html">赣鄱农业地图 <span class="text-xs text-muted">核心亮点</span></a>
+  <a data-nav="science" href="science.html">农业科普 <span class="text-xs text-muted">闯关答题</span></a>
+  <a data-nav="message" href="message.html">助农心愿 <span class="text-xs text-muted">留言板</span></a>
+  <a data-nav="admin" href="admin.html">后台管理 <span class="text-xs text-muted">数据统计</span></a>
+  <a href="#" data-search-open>全站搜索 <span class="text-xs text-muted">/</span></a>
+</div>
+
+<div class="search-layer" aria-hidden="true" role="dialog" aria-label="全站搜索">
+  <div class="search-panel">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      <input type="search" placeholder="搜特产、科研成果、科普文章……" aria-label="搜索关键词">
+      <kbd>ESC</kbd>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <nav class="crumbs" aria-label="面包屑">
+        <a href="../index.html">首页</a><span>/</span><span>助农心愿留言</span>
+      </nav>
+      <span class="eyebrow">互动 · 模块 05</span>
+      <h1 class="page-hero__title">写下你对<br>这片田野的话</h1>
+      <p class="page-hero__desc">不做普通灌水留言板。这里收到的是寄语、建议和愿望，经管理员审核后展示在墙上——内容质量本身就是这个模块的设计。</p>
+      <div class="page-hero__meta">
+        <span class="tag tag--owner">负责人 C</span><span class="tag">注册登录</span><span class="tag tag--earth">审核机制</span><span class="tag tag--gold">JWT 鉴权</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="scaffold reveal">
+        <div class="scaffold__head">
+          <h2 class="scaffold__title">模块接入骨架</h2>
+          <span class="tag tag--gold">待实现</span>
+        </div>
+        <p class="section-desc" style="margin-top:0;margin-bottom:22px">
+          本页已接入全站统一的导航、页脚、搜索与响应式栅格。下方为需求文档中约定的功能清单，
+          按顺序实现即可直接并入站点，无需改动公共样式。
+        </p>
+
+        <div class="grid grid--2">
+          <div>
+            <h3 class="text-serif" style="font-size:16px;margin-bottom:10px">已完成（骨架部分）</h3>
+            <ul class="checklist"><li>页头与全站导航已接入</li><li>留言、心愿入口已进入全站搜索索引</li><li>表单基础样式（输入框 / 按钮 / 提示）可复用</li><li>移动端布局断点已统一</li></ul>
+          </div>
+          <div>
+            <h3 class="text-serif" style="font-size:16px;margin-bottom:10px">待开发（本模块核心）</h3>
+            <ul class="checklist"><li>注册 / 登录：密码加密存储（<code>bcrypt</code>），前端做实时校验</li><li>心愿留言：富文本编辑（加粗、插图），提交后进入待审核状态</li><li>审核展示：仅通过审核的留言上墙，支持分页或滚动加载</li><li>举报与回复：用户可举报不当内容，管理员后台处理</li><li>接口：<code>POST /api/messages</code>、<code>GET /api/messages?status=approved</code></li><li>数据持久化：MySQL <code>messages</code> 表 + 用户表外键关联</li></ul>
+          </div>
+        </div>
+
+        <div class="tech-strip"><span class="tag">RESTful API</span><span class="tag">MySQL</span><span class="tag">JWT</span><span class="tag">bcrypt</span><span class="tag">富文本</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">协作约定</span>
+        <h2 class="section-title">接口与<em>开发规范</em></h2>
+      </div>
+      <div class="next-steps"><div class="next-step reveal" style="--reveal-delay:0ms">
+          <span class="next-step__no">1</span>
+          <div><h4>接口先定契约</h4><p>与 C 成员先敲定字段：id / userId / content / status / createdAt / likes。前端按契约写 mock，后端按契约实现，联调只对字段不对人。</p></div>
+        </div><div class="next-step reveal" style="--reveal-delay:70ms">
+          <span class="next-step__no">2</span>
+          <div><h4>审核是产品逻辑</h4><p>默认 status = pending，只有 approved 才渲染。管理员操作记录保留操作人与时间，便于答辩时讲“内容治理”。</p></div>
+        </div><div class="next-step reveal" style="--reveal-delay:140ms">
+          <span class="next-step__no">3</span>
+          <div><h4>降级方案</h4><p>后端未就绪时，留言先落 localStorage 并标注“本地演示”，保证答辩现场可完整走通流程。</p></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band__inner">
+          <div>
+            <h2>留言之外，也欢迎看看地图</h2>
+            <p>很多心愿其实指向具体的地方：一座城，一种物产，一群人。</p>
+          </div>
+          <a class="btn" href="map.html">翻开赣鄱地图
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="../index.html">
+          <span class="brand__seal" aria-hidden="true">赣</span>
+          <span class="brand__text">
+            <span class="brand__name">赣鄱农韵</span>
+            <span class="brand__sub">江西农业大学 · 农业宣传平台</span>
+          </span>
+        </a>
+        <p class="footer__slogan">展示 + 科普 + 互动，三位一体的农业宣传网站。<br>网页设计大赛参赛作品。</p>
+      </div>
+
+      <div>
+        <h3 class="footer__title">功能模块</h3>
+        <ul class="footer__list">
+          <li><a href="../index.html">首页门户</a></li>
+          <li><a href="research.html">江农科研成果</a></li>
+          <li><a href="map.html">赣鄱农业地图</a></li>
+          <li><a href="science.html">农业科普课堂</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">参与协作</h3>
+        <ul class="footer__list">
+          <li><a href="message.html">助农心愿留言</a></li>
+          <li><a href="admin.html">后台管理</a></li>
+          <li><a href="map.html">特产对比与收藏</a></li>
+          <li><a href="science.html#quiz">答题闯关</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">项目说明</h3>
+        <p class="footer__note">
+          技术架构：Vue 3 + Express + MySQL（前端静态版为先导原型）<br>
+          数据口径：公开资料整理
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> 赣鄱农韵 · 江西农业大学　|　网页设计大赛参赛作品</span>
+      <span class="footer__badge">周怡洁 陈柳蓉 张朝曦 刘可可 祁靖琳</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+赣鄱农韵 · 农业宣传主题网站　使用说明
+========================================
+
+一、打开方式
+  双击根目录 index.html 即可在浏览器中浏览全站（建议 Chrome / Edge / Firefox）。
+  若需要更接近线上环境的效果，可在该目录执行：
+      python -m http.server 8000
+  然后访问 http://127.0.0.1:8000
+
+二、目录结构
+  index.html              首页门户（队长：周怡洁）
+  pages/research.html     江农科研成果（队长：周怡洁）
+  pages/map.html          赣鄱农业地图（陈柳蓉：接入骨架）
+  pages/science.html      农业科普课堂（陈柳蓉：接入骨架）
+  pages/message.html      助农心愿留言（张朝曦：接入骨架）
+  pages/admin.html        后台管理（张朝曦：接入骨架）
+  assets/css/base.css     设计系统：色板、字体、按钮、卡片、栅格（祁靖琳）
+  assets/css/layout.css   导航、搜索浮层、页脚、内页头部、骨架页样式
+  assets/css/home.css     首页专用样式
+  assets/css/research.css 科研成果页专用样式
+  assets/js/common.js     全站公共脚本：吸顶导航、搜索、懒加载、滚动揭示
+  assets/js/charts.js     图表模块（优先 ECharts，离线自动降级为 SVG）
+  assets/js/home.js       首页数据与数字动画
+  assets/js/research.js   时间轴滚动点亮、翻转卡片、学科筛选
+  assets/img/*.svg        原创插画（占位，需替换为实地实拍）
+  gen_pages.py            四个接入页的生成脚本（改公共头尾后重跑即可同步）
+
+三、上线前必须处理的四件事
+  1. 数据口径：页面中所有数字为示例，需以学院 / 科研处提供的数据替换，
+     替换位置：assets/js/home.js 顶部的 DATA 对象。
+  2. 图片素材：assets/img 下为手绘占位图，请替换为实地拍摄照片，
+     单张压缩至 200KB 以内，保持 3:4 或 4:3 比例。
+  3. 地图合规：map.html 接入地图时，必须使用自然资源部标准地图服务
+     （bzdt.ch.mnr.gov.cn）的江西省标准地图作为底图，保留审图号，
+     不得自行手绘省界。
+  4. 时间节点核对：research.html 的时间轴为公开资料整理，答辩前需逐项核对。
+
+四、技术说明
+  · 全站为纯静态实现（HTML5 + CSS3 + 原生 JavaScript），无需构建工具。
+  · 响应式断点：980px、680px，已适配 PC / 平板 / 手机。
+  · 图表优先加载 ECharts（CDN，2.5 秒超时），断网时自动降级为内置 SVG 渲染。
+  · 已做无障碍基础处理：键盘可达、focus 样式、prefers-reduced-motion 降级。

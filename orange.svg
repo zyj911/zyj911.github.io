@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="赣南脐橙果园插画">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F7F3E6"/>
+      <stop offset="1" stop-color="#ECEFDD"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#og)"/>
+  <!-- 远山 -->
+  <path d="M0 300 q 120 -80 240 -18 t 200 -14 t 160 44 L600 400 L0 400Z" fill="#CBD5BC" opacity="0.75"/>
+  <rect y="400" width="600" height="400" fill="#E9E3D2"/>
+  <!-- 树冠 -->
+  <g>
+    <path d="M300 640 L300 470" stroke="#8A6B4B" stroke-width="18" stroke-linecap="round"/>
+    <path d="M300 540 q -60 -20 -86 -62" stroke="#8A6B4B" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <path d="M300 512 q 64 -18 88 -60" stroke="#8A6B4B" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <circle cx="300" cy="392" r="148" fill="#7E9469"/>
+    <circle cx="196" cy="430" r="92" fill="#71875C"/>
+    <circle cx="404" cy="424" r="96" fill="#6E8358"/>
+    <circle cx="300" cy="316" r="92" fill="#8AA073"/>
+  </g>
+  <!-- 果实 -->
+  <g>
+    <circle cx="238" cy="368" r="34" fill="#D98B3A"/>
+    <circle cx="338" cy="330" r="38" fill="#E09540"/>
+    <circle cx="392" cy="424" r="32" fill="#D98B3A"/>
+    <circle cx="266" cy="470" r="33" fill="#DE9243"/>
+    <circle cx="344" cy="492" r="30" fill="#D98B3A"/>
+    <circle cx="214" cy="424" r="28" fill="#E2974A"/>
+    <circle cx="430" cy="360" r="26" fill="#DE9243"/>
+  </g>
+  <g fill="#C9762C" opacity="0.5">
+    <circle cx="250" cy="378" r="7"/><circle cx="350" cy="342" r="8"/><circle cx="278" cy="480" r="7"/>
+  </g>
+  <g fill="#5E7346">
+    <ellipse cx="258" cy="330" rx="16" ry="8" transform="rotate(-28 258 330)"/>
+    <ellipse cx="358" cy="292" rx="17" ry="8" transform="rotate(18 358 292)"/>
+    <ellipse cx="412" cy="388" rx="15" ry="7" transform="rotate(-14 412 388)"/>
+  </g>
+  <!-- 地面草丛 -->
+  <g stroke="#93A47C" stroke-width="4" stroke-linecap="round">
+    <path d="M96 720 q 8 -30 22 -40"/><path d="M120 726 q 2 -28 16 -42"/>
+    <path d="M470 712 q 10 -30 24 -38"/><path d="M496 720 q 4 -26 18 -38"/>
+  </g>
+  <ellipse cx="300" cy="740" rx="150" ry="16" fill="#D9CFB6" opacity="0.6"/>
+</svg>

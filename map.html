@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>赣鄱农业地图 · 赣鄱农韵</title>
+<meta name="description" content="以江西省十一个设区市为主线的交互式农业特产地图，一图览赣鄱。">
+<meta name="theme-color" content="#FAF7F0">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+</head>
+<body data-page="map" data-root="../">
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="../index.html" aria-label="赣鄱农韵 首页">
+      <span class="brand__seal" aria-hidden="true">赣</span>
+      <span class="brand__text">
+        <span class="brand__name">赣鄱农韵</span>
+        <span class="brand__sub">江西农业大学 · 农业宣传平台</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="主导航">
+      <a class="nav__link" data-nav="home" href="../index.html">首页</a>
+      <a class="nav__link" data-nav="research" href="research.html">江农科研成果</a>
+      <a class="nav__link" data-nav="map" href="map.html">赣鄱农业地图</a>
+      <a class="nav__link" data-nav="science" href="science.html">农业科普</a>
+      <a class="nav__link" data-nav="message" href="message.html">助农心愿</a>
+      <a class="nav__link" data-nav="admin" href="admin.html">后台管理</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn icon-btn--desktop" data-search-open type="button" aria-label="全站搜索">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      </button>
+      <button class="burger" type="button" aria-label="展开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <a data-nav="home" href="../index.html">首页 <span class="text-xs text-muted">门户</span></a>
+  <a data-nav="research" href="research.html">江农科研成果 <span class="text-xs text-muted">时间轴</span></a>
+  <a data-nav="map" href="map.html">赣鄱农业地图 <span class="text-xs text-muted">核心亮点</span></a>
+  <a data-nav="science" href="science.html">农业科普 <span class="text-xs text-muted">闯关答题</span></a>
+  <a data-nav="message" href="message.html">助农心愿 <span class="text-xs text-muted">留言板</span></a>
+  <a data-nav="admin" href="admin.html">后台管理 <span class="text-xs text-muted">数据统计</span></a>
+  <a href="#" data-search-open>全站搜索 <span class="text-xs text-muted">/</span></a>
+</div>
+
+<div class="search-layer" aria-hidden="true" role="dialog" aria-label="全站搜索">
+  <div class="search-panel">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+      <input type="search" placeholder="搜特产、科研成果、科普文章……" aria-label="搜索关键词">
+      <kbd>ESC</kbd>
+    </div>
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <nav class="crumbs" aria-label="面包屑">
+        <a href="../index.html">首页</a><span>/</span><span>赣鄱农业地图</span>
+      </nav>
+      <span class="eyebrow">核心亮点 · 模块 03</span>
+      <h1 class="page-hero__title">一图览赣鄱</h1>
+      <p class="page-hero__desc">往下滚动，地图逐市点亮；点开一座城，看到的不只是特产，还有江农在这里做过的事。这是全站最难、也最值得讲清楚的一个模块。</p>
+      <div class="page-hero__meta">
+        <span class="tag tag--owner">负责人 B</span><span class="tag">滚动叙事</span><span class="tag tag--earth">特产对比</span><span class="tag tag--gold">SVG 交互</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="scaffold reveal">
+        <div class="scaffold__head">
+          <h2 class="scaffold__title">模块接入骨架</h2>
+          <span class="tag tag--gold">待实现</span>
+        </div>
+        <p class="section-desc" style="margin-top:0;margin-bottom:22px">
+          本页已接入全站统一的导航、页脚、搜索与响应式栅格。下方为需求文档中约定的功能清单，
+          按顺序实现即可直接并入站点，无需改动公共样式。
+        </p>
+
+        <div class="grid grid--2">
+          <div>
+            <h3 class="text-serif" style="font-size:16px;margin-bottom:10px">已完成（骨架部分）</h3>
+            <ul class="checklist"><li>全站导航、搜索、页脚已接入</li><li>模块页面容器与页头信息位已就绪</li><li>公共配色、卡片、按钮组件可直接复用</li><li>移动端断点（980 / 680）已统一</li></ul>
+          </div>
+          <div>
+            <h3 class="text-serif" style="font-size:16px;margin-bottom:10px">待开发（本模块核心）</h3>
+            <ul class="checklist"><li>使用 <code>SVG</code> 绘制江西省 11 个设区市轮廓，悬停高亮并显示地市名</li><li>滚动叙事：随页面滚动依次点亮地市，带出特产与江农帮扶案例</li><li>数据由 <code>assets/data/cities.json</code> 驱动，一条数据对应一市</li><li>特产对比：可同时选 2 至 3 个地市，生成对比卡片</li><li>收藏与分享：收藏特产，生成含图片与简介的分享海报</li><li>降级方案：滚动叙事开发受阻时，退回点击地图 + 静态图文切换</li></ul>
+          </div>
+        </div>
+
+        <div class="tech-strip"><span class="tag">SVG</span><span class="tag">JSON 数据驱动</span><span class="tag">IntersectionObserver</span><span class="tag">前端路由</span><span class="tag">响应式</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">协作约定</span>
+        <h2 class="section-title">接口与<em>开发规范</em></h2>
+      </div>
+      <div class="next-steps"><div class="next-step reveal" style="--reveal-delay:0ms">
+          <span class="next-step__no">1</span>
+          <div><h4>地图底图必须合规</h4><p>省界轮廓不得自行手绘。请使用自然资源部标准地图服务（bzdt.ch.mnr.gov.cn）下载的江西省标准地图作为底图，保留审图号，并在页脚注明“地图来源：自然资源部标准地图服务”。</p></div>
+        </div><div class="next-step reveal" style="--reveal-delay:70ms">
+          <span class="next-step__no">2</span>
+          <div><h4>数据结构先定，页面后写</h4><p>每市一条 JSON：name /特产数组 / 产量 / 特点 / 适宜区域 / 江农帮扶故事 / 图片来源。前端只读 JSON，不改结构，便于 D 随时补文案。</p></div>
+        </div><div class="next-step reveal" style="--reveal-delay:140ms">
+          <span class="next-step__no">3</span>
+          <div><h4>与科研成果页互相引用</h4><p>每个地市的帮扶故事，链接回 research.html 对应时间轴节点（如 #tl-fruit），让两个模块互相导流，也强化“高校助农”的叙事。</p></div>
+        </div><div class="next-step reveal" style="--reveal-delay:210ms">
+          <span class="next-step__no">4</span>
+          <div><h4>性能兜底</h4><p>地图 SVG 精简路径、去除冗余节点；特产图片统一懒加载，移动端首屏不超过 3 张图。</p></div>
+        </div></div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band__inner">
+          <div>
+            <h2>地图之前，先看时间轴</h2>
+            <p>帮扶故事不是凭空写的。每一条都能在科研成果的时间线上找到对应的年份与团队。</p>
+          </div>
+          <a class="btn" href="research.html">回到科研成果
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="../index.html">
+          <span class="brand__seal" aria-hidden="true">赣</span>
+          <span class="brand__text">
+            <span class="brand__name">赣鄱农韵</span>
+            <span class="brand__sub">江西农业大学 · 农业宣传平台</span>
+          </span>
+        </a>
+        <p class="footer__slogan">展示 + 科普 + 互动，三位一体的农业宣传网站。<br>网页设计大赛参赛作品。</p>
+      </div>
+
+      <div>
+        <h3 class="footer__title">功能模块</h3>
+        <ul class="footer__list">
+          <li><a href="../index.html">首页门户</a></li>
+          <li><a href="research.html">江农科研成果</a></li>
+          <li><a href="map.html">赣鄱农业地图</a></li>
+          <li><a href="science.html">农业科普课堂</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">参与协作</h3>
+        <ul class="footer__list">
+          <li><a href="message.html">助农心愿留言</a></li>
+          <li><a href="admin.html">后台管理</a></li>
+          <li><a href="map.html">特产对比与收藏</a></li>
+          <li><a href="science.html#quiz">答题闯关</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer__title">项目说明</h3>
+        <p class="footer__note">
+          技术架构：Vue 3 + Express + MySQL（前端静态版为先导原型）<br>
+          数据口径：公开资料整理
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> 赣鄱农韵 · 江西农业大学　|　网页设计大赛参赛作品</span>
+      <span class="footer__badge">周怡洁 陈柳蓉 张朝曦 刘可可 祁靖琳</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="../assets/js/common.js"></script>
+</body>
+</html>

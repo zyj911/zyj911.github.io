@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="科技小院插画">
+  <rect width="600" height="800" fill="#F5F1E4"/>
+  <circle cx="118" cy="110" r="46" fill="#EEDCA8" opacity="0.8"/>
+  <path d="M0 380 q 130 -70 260 -12 t 200 -10 t 140 34 L600 470 L0 470Z" fill="#C9D3B9" opacity="0.7"/>
+  <rect y="460" width="600" height="340" fill="#E6DFCC"/>
+  <!-- 试验田条纹 -->
+  <g stroke="#9EAE85" stroke-width="5" opacity="0.65">
+    <path d="M40 520 L560 512"/><path d="M40 570 L560 562"/><path d="M40 620 L560 612"/><path d="M40 670 L560 662"/>
+  </g>
+  <!-- 小院房子 -->
+  <g transform="translate(150 250)">
+    <path d="M0 74 L110 4 L220 74Z" fill="#6E6A5C"/>
+    <rect x="18" y="74" width="184" height="120" fill="#FBF7EC" stroke="#DDD3BE" stroke-width="2"/>
+    <rect x="52" y="112" width="46" height="46" fill="#C3B79C"/>
+    <rect x="122" y="112" width="46" height="46" fill="#C3B79C"/>
+    <rect x="92" y="158" width="38" height="36" fill="#8C7A5E"/>
+    <!-- 牌匾 -->
+    <rect x="56" y="86" width="108" height="20" rx="4" fill="#3B4836"/>
+    <text x="110" y="101" font-family="Songti SC, SimSun, serif" font-size="13" fill="#F3EEDC" text-anchor="middle">科技小院</text>
+  </g>
+  <path d="M392 200 L392 96" stroke="#9A9282" stroke-width="4"/>
+  <path d="M392 98 L446 112 L392 130Z" fill="#C2543C"/>
+  <!-- 两个人 -->
+  <g>
+    <circle cx="300" cy="600" r="18" fill="#D9B18C"/>
+    <path d="M300 620 q -24 4 -26 40 q -2 34 4 60 l 44 0 q 6 -28 4 -60 q -2 -36 -26 -40Z" fill="#5C6F53"/>
+    <circle cx="352" cy="608" r="16" fill="#DDB996"/>
+    <path d="M352 626 q -22 4 -24 36 q -2 30 4 56 l 40 0 q 6 -26 4 -56 q -2 -32 -24 -36Z" fill="#A0714C"/>
+  </g>
+  <!-- 稻穗 -->
+  <g stroke="#7E9069" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M470 700 L470 640"/><path d="M470 664 q 12 -8 18 -20"/>
+    <path d="M120 706 L120 648"/><path d="M120 672 q -12 -8 -16 -20"/>
+  </g>
+</svg>
